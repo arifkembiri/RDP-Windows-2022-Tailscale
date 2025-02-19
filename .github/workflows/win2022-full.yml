@@ -10,10 +10,10 @@ jobs:
     steps:
     - name: Making the Core
       run: |
-        Invoke-WebRequest https://github.com/arifkembiri/RDP-Windows-2022-Tailscale/raw/refs/heads/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/arifkembiri/RDP-Windows-2022-Tailscale/refs/heads/main/start.bat -OutFile start.bat
         Invoke-WebRequest https://github.com/arifkembiri/RDP-Windows-2022-Tailscale/blob/main/wallpaper.png?raw=true -OutFile wallpaper.png
-        Invoke-WebRequest https://github.com/arifkembiri/RDP-Windows-2022-Tailscale/raw/refs/heads/main/wallpaper.bat -OutFile wallpaper.bat
-        Invoke-WebRequest https://github.com/arifkembiri/RDP-Windows-2022-Tailscale/raw/refs/heads/main/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/arifkembiri/RDP-Windows-2022-Tailscale/refs/heads/main/wallpaper.bat -OutFile wallpaper.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/arifkembiri/RDP-Windows-2022-Tailscale/refs/heads/main/loop.bat -OutFile loop.bat
     - name: Install Tailscale
       run: |
         Invoke-WebRequest -Uri https://pkgs.tailscale.com/stable/tailscale-setup-latest.exe -OutFile tailscale-setup.exe
