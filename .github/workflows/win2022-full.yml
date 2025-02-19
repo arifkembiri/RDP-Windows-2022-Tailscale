@@ -11,7 +11,7 @@ jobs:
     - name: Making the Core
       run: |
         Invoke-WebRequest https://github.com/arifkembiri/RDP-Windows-2022-Tailscale/raw/refs/heads/main/start.bat -OutFile start.bat
-        Invoke-WebRequest https://github.com/arifkembiri/RDP-Windows-2022-Tailscale/raw/refs/heads/main/wallpaper.png -OutFile wallpaper.png
+        Invoke-WebRequest https://github.com/arifkembiri/RDP-Windows-2022-Tailscale/blob/main/wallpaper.png?raw=true -OutFile wallpaper.png
         Invoke-WebRequest https://github.com/arifkembiri/RDP-Windows-2022-Tailscale/raw/refs/heads/main/wallpaper.bat -OutFile wallpaper.bat
         Invoke-WebRequest https://github.com/arifkembiri/RDP-Windows-2022-Tailscale/raw/refs/heads/main/loop.bat -OutFile loop.bat
     - name: Install Tailscale
